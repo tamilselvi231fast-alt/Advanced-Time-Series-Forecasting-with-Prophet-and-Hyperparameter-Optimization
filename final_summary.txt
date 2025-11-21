@@ -1,0 +1,33 @@
+Final Summary for Prophet (Optuna) vs ARIMA
+==================================================
+Dataset rows: 1460 (2016-01-01 00:00:00 to 2019-12-30 00:00:00)
+
+Best Prophet Params (Optuna):
+{
+  "changepoint_prior_scale": 0.018289895582215797,
+  "seasonality_prior_scale": 0.8722798602334374,
+  "seasonality_mode": "additive",
+  "fourier_order_yearly": 5,
+  "fourier_order_weekly": 7
+}
+
+Test Metrics:
+Prophet_MAE: 1.9032
+Prophet_RMSE: 2.8208
+Prophet_MAPE: 1.5097
+ARIMA_MAE: 6.2634
+ARIMA_RMSE: 7.5446
+ARIMA_MAPE: 4.8590
+
+Timings (seconds):
+optuna_seconds: 64.09
+prophet_train_seconds: 0.14
+arima_seconds: 12.38
+
+Files saved:
+forecast_plot: /content/forecast_plot.jpg
+comparison_plot: /content/comparison_plot.jpg
+summary_json: /content/ts_project_summary.json
+final_report_md: /content/final_report.md
+final_summary_txt: /content/final_summary.txt
+uploaded_image_path: /mnt/data/2d2d05bf-630e-4d12-98d4-ef55cd8ae6c1.png
